@@ -19,7 +19,7 @@ This is a code along project in the [50 Projects In 50 Days - HTML, CSS & JavaSc
 
 ## Overview👋🏾
 
-Welcome to the 7 mini-project of the course!
+Welcome to the 7th mini-project of the course!
 
 ### The project😥
 
