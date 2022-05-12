@@ -25,7 +25,7 @@ Welcome to the # mini-project of the course!
 
 In this project users will be able to:
 
-- Build a responsive site that displays a functional progress bar.
+- Build a responsive site that displays a split landing page.
 
 ### Screenshot🌇
 
@@ -33,12 +33,12 @@ In this project users will be able to:
 
 ### Links👩🏾‍💻
 
-- Solution URL: (https://github.com/MaianneThornton/50in50_ProgressSteps)
-- Live Site URL: (https://frolicking-biscotti-f94d2f.netlify.app/)
+- Solution URL: (https://github.com/MaianneThornton/50in50_SplitLanding)
+- Live Site URL: (https://fastidious-quokka-bb3e5b.netlify.app/)
 
 ## My process💭
 
-This is a simple project that I started by marking out initial classes and id's in the html file to be later used for styling. Next I began styling the css by styling the line, circles, and buttons. I then added functionality by way of JavaScript to switch between classes when the user clicks on a button.
+This is a simple project that I started by marking out initial classes and in the html file to be later used for styling. Next I began styling the css by creating custom variables, styling each side, and the buttons. I then added functionality by way of JavaScript to switch between classes when the user hovers over each side.
 
 ### Built with👷🏾‍♀️
 
@@ -49,7 +49,7 @@ This is a simple project that I started by marking out initial classes and id's 
 
 ### What I learned👩🏾‍🏫
 
-I learned the logic behind making a simple progress bar functional. I will be applying this to future projects where needed.
+I learned the logic behind making a split landing page functional. I will be applying this to future projects where needed.
 
 I also learned that when using the before or after selectors you MUST add content for the style to be visible.
 
@@ -59,42 +59,17 @@ In the future I plan on continuing to practice positioning elements using flexbo
 
 I also plan on continuing to practice using event listeners to make my pages more functional.
 
-I also plan on continuing to learn the best ways to phrase git commits, so that future viewers can fully understand the changes that have occurred.
+I plan on continuing to practice using different query selectors to make selecting elements more precise.
 
 ### I'm really proud of these code snippets✂️
 
 ```css
-.progress-container::before {
-  content: '';
-  background-color: var(--line-border-empty);
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  height: 4px;
-  width: 100%;
-  z-index: -1;
+.split.right,
+.split.left,
+split.right::before,
+.split.left::before {
+  transition: all var(--speed) ease-in-out;
 }
-```
-
-```js
-next.addEventListener('click', () => {
-  currentActive++;
-
-  if (currentActive > circles.length) {
-    currentActive = circles.length;
-  }
-  update();
-});
-
-prev.addEventListener('click', () => {
-  currentActive--;
-
-  if (currentActive < 1) {
-    currentActive = 1;
-  }
-  update();
-});
 ```
 
 ### Useful resources📖
